@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Строй Товар</string>
+    <string name="title_home">Главная</string>
+    <string name="title_search">Каталог</string>
+    <string name="title_basket">Корзина</string>
+    <string name="title_profile">Профиль</string>
+    <string name="title_zakaz">Заказы</string>
+    <string name="title_likes">Избранное</string>
+    <string name="title_userdata">Личные данные</string>
+    <string name="title_obratnaya_svyz">Обратная связь</string>
+    <string name="title_settings">Настройки</string>
+    <string name="title_information">О приложении</string>
+    <string name="filter_zakaz_all">Все</string>
+    <string name="filter_zakaz_open">Открытые</string>
+    <string name="filter_zakaz_buy">Выкупленные</string>
+    <string name="filter_zakaz_cancel">Отмененные</string>
+    <string name="hello">Добро пожаловать!</string>
+    <string name="let_go">Давайте продолжим?</string>>
+    <string name="login">Войти</string>>
+    <string name="register">Зарегистрироваться</string>>
+    <string name="email">Email</string>
+    <string name="pass">Пароль</string>
+    <string name="con_pass">Подтверждение пароля</string>
+    <string name="back">Назад</string>
+    <string name="auth">Авторизация</string>
+    <string name="registration">Регистрация</string>
+    <string name="search">Поиск</string>
+    <string name="Akcii">Акции и рекомендации</string>
+    <string name="cover">Cover</string>
+    <string name="naming">Naming</string>
+    <string name="price">149.99$</string>
+    <string name="opis">Opisanie</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

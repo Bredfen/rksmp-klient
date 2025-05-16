@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.test.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.test.ui.catalog.CatalogFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_sbornikFragment"
+            app:destination="@id/sbornikFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.test.ui.notifications.NotificationsFragment"
+        android:label="@string/title_basket"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.test.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_zakazFragment"
+            app:destination="@id/zakazFragment" />
+        <action
+            android:id="@+id/action_navigation_profile_to_likesFragment"
+            app:destination="@id/likesFragment" />
+        <action
+            android:id="@+id/action_navigation_profile_to_userDataFragment"
+            app:destination="@id/userDataFragment" />
+        <action
+            android:id="@+id/action_navigation_profile_to_obratnayaSvyzFragment2"
+            app:destination="@id/obratnayaSvyzFragment" />
+        <action
+            android:id="@+id/action_navigation_profile_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_navigation_profile_to_informationFragment"
+            app:destination="@id/informationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/zakazFragment"
+        android:name="com.example.test.ui.order.ZakazFragment"
+        android:label="@string/title_zakaz"
+        tools:layout="@layout/fragment_zakaz" />
+
+    <fragment
+        android:id="@+id/likesFragment"
+        android:name="com.example.test.ui.like.LikesFragment"
+        android:label="@string/title_likes"
+        tools:layout="@layout/fragment_likes" />
+
+    <fragment
+        android:id="@+id/userDataFragment"
+        android:name="com.example.test.ui.userdata.UserDataFragment"
+        android:label="@string/title_userdata"
+        tools:layout="@layout/fragment_user_data" />
+
+    <fragment
+        android:id="@+id/obratnayaSvyzFragment"
+        android:name="com.example.test.ui.obratnaya_svyz.ObratnayaSvyzFragment"
+        android:label="@string/title_obratnaya_svyz"
+        tools:layout="@layout/fragment_obratnaya_svyz" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.test.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/informationFragment"
+        android:name="com.example.test.ui.information.InformationFragment"
+        android:label="@string/title_information"
+        tools:layout="@layout/fragment_information" />
+    <fragment
+        android:id="@+id/sbornikFragment"
+        android:name="com.example.test.ui.sbornik.SbornikFragment"
+        android:label="Каталог"
+        tools:layout="@layout/fragment_catalog" >
+    <argument
+        android:name="category"
+        app:argType="string" />
+        <action
+            android:id="@+id/action_sbornikFragment_to_navigation_notifications"
+            app:destination="@id/navigation_notifications" />
+    </fragment>
+</navigation>

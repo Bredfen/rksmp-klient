@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextStyle">
+        <item name="android:fontFamily">@font/jura</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CardViewStyle">
+        <item name="cardCornerRadius">@dimen/dp_5</item>
+        <item name="android:layout_marginStart">@dimen/dp_5</item>
+        <item name="android:layout_marginEnd">@dimen/dp_5</item>
+    </style>
+
+    <style name="EditTextStyleStart">
+        <item name="android:fontFamily">@font/jura_semibold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/white_hint</item>
+        <item name="android:textSize">@dimen/sp_25</item>
+        <item name="android:layout_marginStart">@dimen/dp_10</item>
+        <item name="android:layout_marginEnd">@dimen/dp_10</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:fontFamily">@font/jura_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:layout_width">@dimen/dp_360</item>
+        <item name="android:layout_height">@dimen/dp_60</item>
+        <item name="android:backgroundTint">@color/button_color</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+        <item name="android:layout_marginRight">@dimen/dp_10</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>

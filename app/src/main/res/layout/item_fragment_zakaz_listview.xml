@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_5"
+    android:layout_marginBottom="@dimen/dp_5"
+    app:barrierMargin="@dimen/dp_5"
+    app:cardCornerRadius="@dimen/dp_25"
+    app:cardElevation="@dimen/dp_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="Заказ"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_25"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/number_zakaz"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_25"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView23"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:gravity="center"
+                android:text="от"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_25"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dateZakaz"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_25"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView18"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_25"
+            android:text="Адрес самовывоза"
+ />
+
+        <TextView
+            android:id="@+id/text_adress"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/textView20"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="Телефон получателя" />
+
+        <TextView
+            android:id="@+id/text_number_phone"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+        <ListView
+            android:id="@+id/item_zakaz_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_5" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
