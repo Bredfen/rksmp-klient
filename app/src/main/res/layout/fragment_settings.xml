@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp_60"
                 android:layout_gravity="center"
-                android:background="@color/main_color"
+                android:background="@color/top_navigation"
                 android:gravity="center"
                 android:text="Изменить тему"
                 android:textColor="@color/black"

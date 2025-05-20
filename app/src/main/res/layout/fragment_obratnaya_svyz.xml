@@ -70,10 +70,10 @@
                         android:layout_height="@dimen/dp_40"
                         android:layout_marginStart="@dimen/dp_5"
                         android:layout_marginBottom="@dimen/dp_10"
-                        android:text="+7(999)888-88-88"
+                        android:text="@string/support_phone"
+                        android:textColor="@color/black"
                         android:textSize="@dimen/sp_20"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <ImageView
@@ -116,7 +116,7 @@
                     android:layout_height="@dimen/dp_40"
                     android:layout_marginStart="@dimen/dp_5"
                     android:layout_marginBottom="@dimen/dp_10"
-                    android:text="stroika-tovar-help@help.ru"
+                    android:text="@string/support_email"
                     android:textSize="@dimen/sp_20"
                     android:textStyle="bold"
                     android:textColor="@color/black"/>

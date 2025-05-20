@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Строй Товар</string>
+    <string name="app_name">Апотека Поповић</string>
     <string name="title_home">Главная</string>
     <string name="title_search">Каталог</string>
     <string name="title_basket">Корзина</string>
@@ -16,7 +16,9 @@
     <string name="filter_zakaz_cancel">Отмененные</string>
     <string name="hello">Добро пожаловать!</string>
     <string name="let_go">Давайте продолжим?</string>>
-    <string name="login">Войти</string>>
+    <string name="login">Войти</string>
+    <string name="support_phone">+7(495)256–10-24</string>
+    <string name="support_email">support@popovich.ru</string>
     <string name="register">Зарегистрироваться</string>>
     <string name="email">Email</string>
     <string name="pass">Пароль</string>

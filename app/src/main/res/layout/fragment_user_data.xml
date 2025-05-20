@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:src="@drawable/user_profile_2"
-            android:background="@color/white"/>
+            android:background="@color/ico_background"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"

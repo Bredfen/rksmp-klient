@@ -2,6 +2,7 @@ package com.example.test.ui.register
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -53,7 +54,8 @@ class RegistrationActivity : AppCompatActivity() {
                 }
 
                 override fun onFailure(call: Call<Unit>, t: Throwable) {
-                    Toast.makeText(this@RegistrationActivity, "Не удалось зарегистрироваться, ошибка сети: ${t.localizedMessage}", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@RegistrationActivity, "Не удалось зарегистрироваться, ошибка сети: ${t.localizedMessage}", Toast.LENGTH_LONG).show();
+                    Log.w("registration-failed","Не удалось зарегистрироваться, ошибка сети: ${t.localizedMessage}");
                 }
             })
         }

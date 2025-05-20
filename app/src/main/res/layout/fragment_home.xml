@@ -21,7 +21,7 @@
             style="@style/TextStyle"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_60"
-            android:background="@color/main_color"
+            android:background="@color/top_navigation"
             android:gravity="center"
             android:text="@string/Akcii"
             android:textColor="@color/black"

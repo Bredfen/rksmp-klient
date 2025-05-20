@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/dp_25"
-            android:background="@color/main_color"
+            android:background="@color/top_navigation"
             android:gravity="center"
             android:text="@string/auth"
             android:textColor="@color/black"

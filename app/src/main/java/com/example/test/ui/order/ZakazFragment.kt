@@ -30,18 +30,18 @@ class ZakazFragment : Fragment() {
         var listView = binding.itemFragmentZakazListview
 
         val EdinicaTovara1 = listOf(
-            EdinicaTovara("Xiaomi Redmi Note 6","00000001","1","6990.00₽",R.drawable.smart_1),
-            EdinicaTovara("Xiaomi Redmi Note 7","00000002","1","8990.00₽",R.drawable.smart_2)
+            EdinicaTovara("Тонометр Omron M2 Classic","00000001","1","2499.00₽",R.drawable.tonometr_omron_m2),
+            EdinicaTovara("Глюкометр OneTouch Select Plusc","00000002","1","1599.00₽",R.drawable.glukometr_onetouch)
         )
 
         val EdinicaTovara2 = listOf(
-            EdinicaTovara("Xiaomi Redmi Note 8","00000003","1","10990.00₽",R.drawable.smart_3),
-            EdinicaTovara("Xiaomi Redmi Note 9","00000004","1","12990.00₽",R.drawable.smart_4),
+            EdinicaTovara("Омепразол 20мг №30","00000003","1","129.00₽",R.drawable.omeprazol_20mg),
+            EdinicaTovara("Нурофен 400мг №12","00000004","1","189.00₽",R.drawable.nurofen_400mg),
         )
 
         val EdinicaTovara3 = listOf(
-            EdinicaTovara("Xiaomi Redmi Note 10","00000005","1","14990.00₽",R.drawable.smart_5),
-            EdinicaTovara("Xiaomi Redmi Note 11","00000006","1","16990.00₽",R.drawable.smart_6),
+            EdinicaTovara("Аспирин Кардио 100мг №30","00000005","1","239.00₽",R.drawable.aspirin_cardio_100mg),
+            EdinicaTovara("ОмегаВит D3 2000МЕ №60","00000006","1","399.00",R.drawable.omegavit_d3),
         )
 
         val dataList = listOf (

@@ -20,24 +20,29 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="8dp"
-            android:padding="8dp">
+            android:padding="8dp"
+            android:background="@color/ico_subbackground">
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="46dp"
+                android:layout_height="41dp"
                 android:layout_gravity="center"
                 android:layout_marginEnd="8dp"
-                android:src="@drawable/ic_search" />
+                android:background="@color/ico_subbackground"
+                android:src="@drawable/search_icon" />
 
             <EditText
                 android:id="@+id/editTextText"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:background="@color/ico_subbackground"
                 android:hint="Введите название товара"
                 android:inputType="text"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:textCursorDrawable="@color/search_color"/>
+
 
             <Button
                 android:id="@+id/clearButton"

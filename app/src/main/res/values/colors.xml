@@ -8,7 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="background_color">#5272FE</color>
-    <color name="button_color">#E07B39</color>
+    <color name="button_color">#1028B0</color>
     <color name="light_blue_600">#FF039BE5</color>
     <color name="light_blue_900">#FF01579B</color>
     <color name="light_blue_A200">#FF40C4FF</color>
@@ -18,7 +18,11 @@
     <color name="bottom_navigation">#5242ff</color>
     <color name="background_fragment">#DDFAFF</color>
     <color name="color_item">#C0E0FF</color>
+    <color name="top_navigation">#ACB3FF</color>
+    <color name="ico_background">#ffffff</color>
+    <color name="ico_subbackground">#ffffff</color>
     <color name="gray">#636363</color>
+    <color name="search_color">#636363</color>
     <color name="gray_tint">#A3A3A3</color>
-    <color name="main_color">#fbf2e1</color>
+    <color name="main_color">#E1E9FB</color>
 </resources>

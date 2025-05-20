@@ -38,8 +38,8 @@
                 android:layout_marginEnd="@dimen/dp_10"
                 android:layout_marginBottom="@dimen/dp_25"
                 android:foregroundGravity="center_vertical|clip_horizontal|center|center_horizontal"
-                app:srcCompat="@drawable/background_stroika"
-                tools:srcCompat="@drawable/background_stroika" />
+                app:srcCompat="@drawable/popovic_logo"
+                tools:srcCompat="@drawable/popovic_logo" />
 
             <TextView
                 android:id="@+id/textView2"

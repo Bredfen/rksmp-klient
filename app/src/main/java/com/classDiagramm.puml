@@ -1,0 +1,330 @@
+@startuml
+class com.example.test.ui.register.RegistrationActivity {
++ void onCreate(Bundle?)
+}
+
+class com.example.test.ui.sbornik.ProductAdapter$ProductViewHolder {
++ ImageView productImage
++ TextView productName
++ TextView productRating
++ TextView productPrice
++ RatingBar productRate
++ ImageButton likeButton
++ Button buyButton
++ <<Create>> ProductViewHolder(View)
+}
+
+
+class com.example.test.ui.sbornik.ProductAdapter {
++ <<Create>> ProductAdapter(Context,List<Product>,(Product) -> Unit,(Product) -> Unit)
++ ProductViewHolder onCreateViewHolder(ViewGroup,Int)
++ void onBindViewHolder(ProductViewHolder,Int)
++ Int getItemCount()
+}
+
+class com.example.test.ui.like.LikesFragment {
+- RecyclerView.LayoutManager? layoutManager
+- LikesAdapter? adapter
+- FragmentLikesBinding? _binding
+-  binding
+- SharedViewModel sharedViewModel
++ View onCreateView(LayoutInflater,ViewGroup?,Bundle?)
++ void onDestroyView()
+}
+
+
+class com.example.test.ui.order.ItemZakaz {
++ <<Create>> ItemZakaz(String,String,String,String,List<EdinicaTovara>)
+}
+
+class com.example.test.ui.notifications.NotificationsViewModel {
+-  _text
++ LiveData<String> text
+}
+
+class com.example.test.ui.home.ProductItem {
++ <<Create>> ProductItem(,String,,String,,Double,,String)
+}
+
+class com.example.test.ui.sbornik.SharedViewModel {
+-  _likedProducts
+-  _basketProducts
++ LiveData<MutableList<Product>> likedProducts
++ LiveData<MutableList<Product>> basketProducts
++ void addProduct(Product)
+}
+
+
+class com.example.test.ui.profile.ProfileViewModel {
+-  _text
++ LiveData<String> text
+}
+
+class com.example.test.ui.order.EdinicaTovaraAdapter {
++ <<Create>> EdinicaTovaraAdapter(Context,List<EdinicaTovara>)
++ Int getCount()
++ Any getItem(Int)
++ Long getItemId(Int)
++ View getView(Int,View?,ViewGroup?)
+}
+
+class com.example.test.ui.catalog.CatalogFragment {
+- FragmentDashboardBinding? _binding
+-  binding
+- ListView listView
+- ProgressBar progressBar
+- EditText editTextSearchQuery
+- Button clearButton
+- LinearLayout placeholderContainer
+- TextView placeholderText
+- Button retryButton
+- ListView searchHistoryListView
+- Button clearHistoryButton
+- ArrayAdapter<String> historyAdapter
+-  searchHistory
+-  sharedPrefsKey
+- ProductAdapter adapter
+-  handler
+- Runnable? searchRunnable
+- String lastQuery
++ View onCreateView(LayoutInflater,ViewGroup?,Bundle?)
+- void performSearch(String)
+- void showProgressBar(Boolean)
+- void showPlaceholder(Boolean,String,Boolean)
+- void saveSearchHistory()
+- void loadSearchHistory()
+- void hideKeyboard()
++ void onDestroyView()
+}
+
+
+class com.example.test.ui.profile.ItemProfile {
++ <<Create>> ItemProfile(Int,String)
+}
+
+class com.example.test.ui.catalog.ProductAdapter {
++ <<Create>> ProductAdapter(Context,List<ProductItem>)
++ void getCount()
++ void getItem(Int)
++ void getItemId(Int)
++ View getView(Int,View?,ViewGroup?)
++ void updateData(List<ProductItem>)
+}
+
+class com.example.test.ui.home.RecyclerViewAdapter$ViewHolder {
++ ImageView image
++ TextView textName
++ TextView textSubtitle
++ TextView textPrice
++ <<Create>> ViewHolder(View)
+}
+
+
+class com.example.test.ui.home.RecyclerViewAdapter {
++ <<Create>> RecyclerViewAdapter(List<ProductItem>)
++ ViewHolder onCreateViewHolder(ViewGroup,Int)
++ void getItemCount()
++ void onBindViewHolder(ViewHolder,Int)
+}
+
+class com.example.test.ui.login.LoginResponse {
++ <<Create>> LoginResponse(,String)
+}
+
+class com.example.test.ui.profile.ProfileFragment {
+- FragmentProfileBinding? _binding
+-  binding
++ View onCreateView(LayoutInflater,ViewGroup?,Bundle?)
++ void onDestroyView()
+}
+
+
+class com.example.test.ui.catalog.DashboardViewModel {
+-  _text
++ LiveData<String> text
+}
+
+class com.example.test.ui.sbornik.Product {
++ <<Create>> Product(String,String,Double,Double,String,String)
+}
+
+class com.example.test.ui.home.HomeViewModel {
+-  _text
++ LiveData<String> text
+}
+
+class com.example.test.ui.order.ZakazFragment {
+- FragmentZakazBinding? _binding
+-  binding
++ View onCreateView(LayoutInflater,ViewGroup?,Bundle?)
++ void onDestroyView()
+}
+
+
+class com.example.test.ui.order.EdinicaTovara {
++ <<Create>> EdinicaTovara(String,String,String,String,Int)
+}
+
+class com.example.test.ui.notifications.BasketAdapter$BasketViewHolder {
++ TextView productName
++ TextView productPrice
++ ImageView productImage
++ <<Create>> BasketViewHolder(View)
+}
+
+
+class com.example.test.ui.notifications.BasketAdapter {
++ <<Create>> BasketAdapter(Context,MutableList<Product>)
++ BasketViewHolder onCreateViewHolder(ViewGroup,Int)
++ void onBindViewHolder(BasketViewHolder,Int)
++ Int getItemCount()
++ void updateProducts(List<Product>)
+}
+
+class com.example.test.ui.information.InformationFragment {
++ View? onCreateView(LayoutInflater,ViewGroup?,Bundle?)
+}
+
+class com.example.test.ui.profile.ProfileAdapter {
++ <<Create>> ProfileAdapter(Context,List<ItemProfile>)
++ Int getCount()
++ Any getItem(Int)
++ Long getItemId(Int)
++ View getView(Int,View?,ViewGroup?)
+}
+
+class com.example.test.ui.settings.SettingsFragment {
+- Switch themeSwitch
+- SharedPreferences sharedPreferences
++ View? onCreateView(LayoutInflater,ViewGroup?,Bundle?)
++ void onViewCreated(View,Bundle?)
+}
+
+
+class com.example.test.ui.obratnaya_svyz.ObratnayaSvyzFragment {
++ View? onCreateView(LayoutInflater,ViewGroup?,Bundle?)
+}
+
+class com.example.test.ui.like.LikesAdapter$ViewHolder {
++ ImageView productImage
++ TextView productName
++ TextView productRating
++ TextView productPrice
++ RatingBar productRate
++ <<Create>> ViewHolder(View)
+}
+
+
+class com.example.test.ui.like.LikesAdapter {
++ <<Create>> LikesAdapter(List<Product>)
++ ViewHolder onCreateViewHolder(ViewGroup,Int)
++ void onBindViewHolder(ViewHolder,Int)
++ Int getItemCount()
++ void updateProducts(List<Product>)
+}
+
+class com.example.test.ui.order.ZakazAdapter {
++ <<Create>> ZakazAdapter(Context,List<ItemZakaz>)
++ Int getCount()
++ Any getItem(Int)
++ Long getItemId(Int)
++ View getView(Int,View?,ViewGroup?)
+}
+
+class com.example.test.ui.sbornik.SbornikFragment {
+- RecyclerView recyclerView
+- ProductAdapter productAdapter
+- List<Product> productList
+- String? category
+- SharedViewModel sharedViewModel
++ void onCreate(Bundle?)
++ View? onCreateView(LayoutInflater,ViewGroup?,Bundle?)
+- void loadProductsFromAssets()
+- void setupRecyclerView()
+}
+
+
+class com.example.test.ui.notifications.NotificationsFragment {
+- SharedViewModel sharedViewModel
+- RecyclerView.LayoutManager? layoutManager
+- BasketAdapter? adapter
+- FragmentNotificationsBinding? _binding
+-  binding
++ View? onCreateView(LayoutInflater,ViewGroup?,Bundle?)
++ void onDestroyView()
+}
+
+
+class com.example.test.ui.home.HomeFragment {
+- FragmentHomeBinding? _binding
+-  binding
+- RecyclerViewAdapter adapter
++ View onCreateView(LayoutInflater,ViewGroup?,Bundle?)
+- void loadProducts()
++ void onDestroyView()
+}
+
+
+class com.example.test.ui.login.LoginActivity {
++ void onCreate(Bundle?)
+}
+
+class com.example.test.ui.userdata.UserDataFragment {
+-  isEditing
+-  notEditing
+- EditText editTextFIO
+- EditText editTextPhone
+- EditText editTextEmail
+- EditText editTextPassword
+- ImageView imageViewFIOconf
+- ImageView imageViewPhoneconf
+- ImageView imageViewEmailconf
+- ImageView imageViewPasswordconf
++ View? onCreateView(LayoutInflater,ViewGroup?,Bundle?)
+- void setEditTextsEnabled(Boolean)
+- void showConfirmIcons(Boolean)
+- Boolean areFieldsFilled(EditText)
+}
+
+
+class com.example.test.ui.catalog.Item {
++ <<Create>> Item(,Int,String)
+}
+
+
+
+androidx.appcompat.app.AppCompatActivity <|-- com.example.test.ui.register.RegistrationActivity
+com.example.test.ui.sbornik.ProductAdapter +.. com.example.test.ui.sbornik.ProductAdapter$ProductViewHolder
+com.example.test.ui.sbornik.ViewHolder <|-- com.example.test.ui.sbornik.ProductAdapter$ProductViewHolder
+com.example.test.ui.sbornik.Adapter <|-- com.example.test.ui.sbornik.ProductAdapter
+androidx.fragment.app.Fragment <|-- com.example.test.ui.like.LikesFragment
+androidx.lifecycle.ViewModel <|-- com.example.test.ui.notifications.NotificationsViewModel
+androidx.lifecycle.ViewModel <|-- com.example.test.ui.sbornik.SharedViewModel
+androidx.lifecycle.ViewModel <|-- com.example.test.ui.profile.ProfileViewModel
+android.widget.BaseAdapter <|-- com.example.test.ui.order.EdinicaTovaraAdapter
+androidx.fragment.app.Fragment <|-- com.example.test.ui.catalog.CatalogFragment
+com.example.test.ui.catalog.BaseAdapter <|-- com.example.test.ui.catalog.ProductAdapter
+com.example.test.ui.home.RecyclerViewAdapter +.. com.example.test.ui.home.RecyclerViewAdapter$ViewHolder
+com.example.test.ui.home.ViewHolder <|-- com.example.test.ui.home.RecyclerViewAdapter$ViewHolder
+com.example.test.ui.home.Adapter <|-- com.example.test.ui.home.RecyclerViewAdapter
+androidx.fragment.app.Fragment <|-- com.example.test.ui.profile.ProfileFragment
+androidx.lifecycle.ViewModel <|-- com.example.test.ui.catalog.DashboardViewModel
+androidx.lifecycle.ViewModel <|-- com.example.test.ui.home.HomeViewModel
+androidx.fragment.app.Fragment <|-- com.example.test.ui.order.ZakazFragment
+com.example.test.ui.notifications.BasketAdapter +.. com.example.test.ui.notifications.BasketAdapter$BasketViewHolder
+com.example.test.ui.notifications.ViewHolder <|-- com.example.test.ui.notifications.BasketAdapter$BasketViewHolder
+com.example.test.ui.notifications.Adapter <|-- com.example.test.ui.notifications.BasketAdapter
+androidx.fragment.app.Fragment <|-- com.example.test.ui.information.InformationFragment
+android.widget.BaseAdapter <|-- com.example.test.ui.profile.ProfileAdapter
+androidx.fragment.app.Fragment <|-- com.example.test.ui.settings.SettingsFragment
+androidx.fragment.app.Fragment <|-- com.example.test.ui.obratnaya_svyz.ObratnayaSvyzFragment
+com.example.test.ui.like.LikesAdapter +.. com.example.test.ui.like.LikesAdapter$ViewHolder
+com.example.test.ui.like.ViewHolder <|-- com.example.test.ui.like.LikesAdapter$ViewHolder
+com.example.test.ui.like.Adapter <|-- com.example.test.ui.like.LikesAdapter
+android.widget.BaseAdapter <|-- com.example.test.ui.order.ZakazAdapter
+androidx.fragment.app.Fragment <|-- com.example.test.ui.sbornik.SbornikFragment
+androidx.fragment.app.Fragment <|-- com.example.test.ui.notifications.NotificationsFragment
+androidx.fragment.app.Fragment <|-- com.example.test.ui.home.HomeFragment
+androidx.appcompat.app.AppCompatActivity <|-- com.example.test.ui.login.LoginActivity
+androidx.fragment.app.Fragment <|-- com.example.test.ui.userdata.UserDataFragment
+@enduml
